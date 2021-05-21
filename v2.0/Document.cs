@@ -5,8 +5,14 @@ namespace v2._0
 {
     public class Document
     {
-        private static string folderPath = "FIFA";
-        private static string filePath = @"FIFA\WorldCupWinners.txt";
+        private static string folderPath;
+        private static string filePath;
+
+        static Document()
+        {
+            folderPath = "FIFA";
+            filePath = @"FIFA\WorldCupWinners.txt";
+        }
 
         public static void FileSystemCheck()
         {
