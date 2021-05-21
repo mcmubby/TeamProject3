@@ -25,8 +25,12 @@ namespace v2._0
         {
             if (!File.Exists(filePath))
             {
-                var content = Test.LoadWorldCupRecord();
+                var content = Record.LoadWorldCupRecord();
                 File.AppendAllLines(filePath, content);       
+            }
+            else
+            {
+                Console.WriteLine("WorldCupWinners.txt already exist. Kindly check FIFA folder.\n");
             }
         }
         public static void PrintFile()

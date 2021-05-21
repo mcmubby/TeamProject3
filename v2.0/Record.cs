@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace v2._0
 {
-    public class Test
+    public class Record
     {
         private static string[] countries = new[]{"Uruguay", "Italy", "Italy", "Uruguay", "West Germany",
                                     "Brazil", "Brazil", "England", "Brazil", "West Germany",

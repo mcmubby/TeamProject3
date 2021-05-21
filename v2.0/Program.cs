@@ -6,10 +6,16 @@ namespace v2._0
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Document.FileSystemCheck();
-            Document.WriteRecordToFile();
-            Document.PrintFile();
+            try
+            {
+                Document.FileSystemCheck();
+                Document.WriteRecordToFile();
+                Document.PrintFile();
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine(ex.Message);
+            }
         }
     }
 }
