@@ -7,6 +7,7 @@ namespace v2._0
     {
         private static string folderPath = "FIFA";
         private static string filePath = @"FIFA\WorldCupWinners.txt";
+
         public static void FileSystemCheck()
         {
             CreateFolder();
@@ -25,6 +26,8 @@ namespace v2._0
         {
             if (!File.Exists(filePath))
             {
+                string heading = "Year  \t\t Country \n\n";
+                File.AppendAllText(filePath,heading);
                 var content = Record.LoadWorldCupRecord();
                 File.AppendAllLines(filePath, content);       
             }
@@ -33,6 +36,7 @@ namespace v2._0
                 Console.WriteLine("WorldCupWinners.txt already exist. Kindly check FIFA folder.\n");
             }
         }
+
         public static void PrintFile()
         {
             Console.WriteLine(File.ReadAllText(filePath));
