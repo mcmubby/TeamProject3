@@ -1,0 +1,36 @@
+write a c# program that saves countries and their world cup winning year to a text file and also read all the input 
+         from the file to the console. Using the correct class in .net create a folder called fifa and a 
+         file called worldcupwinners(create the file from your code) also take care of possible user errors and unforeseen errors.
+
+1. Take input from user and save to a text file in a particular folder. 
+    Take care of the condition where the file already exist.
+    Take care of the conditon where same entry exist.
+
+2. Print content of the file to console.
+3. handle exception
+
+1
+- Use a document class to group folder and file creation.
+- Methods: CreateFile, CreateFolder, AlreadyExist (two overloads), PrintFile.
+
+1930 – Uruguay
+1934 – Italy
+1938 – Italy
+1950 – Uruguay
+1954 – West Germany
+1958 – Brazil
+1962 – Brazil 
+1966 – England
+1970 – Brazil
+1974 – West Germany 
+1978 – Argentina
+1982 – Italy
+1986 – Argentina
+1990 – West Germany
+1994 – Brazil
+1998 – France
+2002 – Brazil
+2006 – Italy
+2010 – Spain
+2014 – Germany
+2018 – France
